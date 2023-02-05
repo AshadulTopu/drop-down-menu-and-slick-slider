@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-bar{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+
+}
+.menu-bar .logo h1{
+    font-size: 62px;
+    font-weight: 900;
+    color: aliceblue;
+}
+.menu-bar .logo h1 span{
+    color: red;
+}
+.main-menu ul{
+    display: flex;
+    align-items: center;
+   
+}
+.main-menu ul li{
+    list-style: none;
+    padding: 20px;
+    position: relative;
+}
+.main-menu ul li a{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 1s ease;
+}
+
+.main-menu li a:hover{
+    color: red;
+}
+.main-menu li i{
+    transition: all 2s ease;
+}
+.main-menu li:hover i{
+    transform: rotate(180deg) ;
+    /* transform: rotate(-180deg) ; */
+}
+
+.main-menu li:nth-child(3):hover .sub-menu ul{
+    display: block;
+}
+.sub-menu ul{
+    display: none;
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+}
+.sub-menu ul li{
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.slider{
+    
+    display: flex;
+    gap: 20px;
+}
+.slider li{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    list-style: none;
+    /* width: 300px; */
+    /* height: 200px; */
+    background-color: yellowgreen;
+}
